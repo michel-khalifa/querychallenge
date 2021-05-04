@@ -1,5 +1,5 @@
 # **Query Challenge**
-This API provides auto-complete suggestions for a list of cities. The search string is passed as in path string parameter. The endpoint returns a JSON response with an array suggested matches.
+This API provides auto-complete suggestions for a list of cities. The search string is passed as in path string parameter. The endpoint returns a JSON response with an array of suggested matches.
 
 ## **Features**
 * This REST service using the Connexion Python library
@@ -10,12 +10,8 @@ This API provides auto-complete suggestions for a list of cities. The search str
 * Using swagger_tester and unittest for unit testing
 
 ## **Files**
-* swagger.yml: REST API Swagger definition
-* app.py: Main app file which read the swagger file and start the API endpoint
-* cities.py: Handles cities suggestions actions 
-* cities.db: DB file that serves data to the REST API service
-* unitTest.py: Unity test for the REST API service
-
-What is missing?
-* More unit testing
-* 
+* **swagger.yml**: REST API Swagger definition
+* **app.py**: Main app file which read the swagger file and start the API endpoint
+* **cities.py**: Handles cities suggestions function 
+* **cities.db**: DB file that serves data to the REST API service
+* **unitTest.py**: Unity test for the REST API service
