@@ -1,0 +1,34 @@
+swagger: "2.0"
+info:
+  description: This is the swagger file that goes with our server code
+  version: "1.0.0"
+  title: Swagger REST Article
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+basePath: "/api"
+
+# Paths supported by the server application
+paths:
+  /suggestions/{q}:
+    get:
+      operationId: "api.cities.suggestions"
+      tags:
+        - "cities"
+      summary: "API endpoint that provides auto-complete suggestions for a list of cities"
+      description: "provides auto-complete suggestions for a list of cities"
+      parameters:
+        - in: path
+          name: q
+          type: string
+          description: "String to match"
+          required: true
+      responses:
+        "200":
+          description: "Successful suggested a list of cities"
+          schema:
+            type: array
+            items:
+              type: string
