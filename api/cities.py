@@ -6,7 +6,7 @@ def suggestions(q):
     # Create an empty list for our results
     results = []
     # Connect to the cities DB
-    conn = sqlite3.connect('../db/cities.db')
+    conn = sqlite3.connect('./db/cities.db')
     cur = conn.cursor()
     cities = cur.execute("SELECT name FROM cities where name like '" + '%' + q + '%' + "';").fetchall()
     # Loop through the data and add it to results list.

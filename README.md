@@ -16,6 +16,19 @@ This API provides auto-complete suggestions for a list of cities. The search str
 * cities.db: DB file that serves data to the REST API service
 * unitTest.py: Unity test for the REST API service
 
+## **How to Run**
+* Clone the repo
+
+* Build Docker image 
+  
+      docker build -t querychallenge:1.0 .
+* Run Docker image
+
+      docker run -p 5000:5000 --name querychallenge querychallenge:1.0
+* Go to the following URL in your local browser
+  
+      http://localhost:5000/api/ui/
+
 ## **Example**
 ### **Request**
 **Curl**
@@ -48,3 +61,4 @@ This API provides auto-complete suggestions for a list of cities. The search str
 ### **What is missing?**
 * More unit testing
 * Authentication method 
+* Error Handling

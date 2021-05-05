@@ -14,7 +14,7 @@ basePath: "/api"
 paths:
   /suggestions/{q}:
     get:
-      operationId: "api.cities.suggestions"
+      operationId: "cities.suggestions"
       tags:
         - "cities"
       summary: "API endpoint that provides auto-complete suggestions for a list of cities"
