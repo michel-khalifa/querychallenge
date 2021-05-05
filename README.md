@@ -15,6 +15,7 @@ This API provides auto-complete suggestions for a list of cities. The search str
 * cities.py: Handles cities suggestions actions 
 * cities.db: DB file that serves data to the REST API service
 * unitTest.py: Unity test for the REST API service
+* Dockerfile: To build the API as a runnable Docker image
 
 ## **How to Run**
 * Clone the repo
